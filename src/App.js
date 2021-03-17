@@ -24,7 +24,6 @@ function App() {
   console.log('context api', loggedInUser);
   return (
     <UserContext.Provider value = {[loggedInUser, setLoggedInUser]}>
-      <h3>email: {loggedInUser.email}</h3>  
       <Router>
       <Header></Header>
         <Switch>
